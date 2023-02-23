@@ -134,3 +134,220 @@ dl, ol, ul {
 
 
 
+/*======================================
+    Search Input Bar
+========================================*/
+
+.searchContainer {
+    width: 60%;
+    height: 50px;
+    margin-left: 95px;
+    margin-top: 24px;
+    background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    box-shadow: 0px 4.45px 9px -3px rgb(0 0 0 / 7%);
+    border-radius: 346.833px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    }
+    
+    .searchInputDivider {
+
+    width: 30.06px;
+    height: 0px;
+    left: 588.87px;
+    top: 35.13px;
+    transform: rotate(90deg);
+    }
+    
+    .searchPeopleField { 
+
+
+
+    }
+    
+    .searchDateField {
+    min-width:120px;
+
+    }
+    
+    .searchLocationField {
+    flex:auto;
+    width:213px;
+    }
+    
+    .searchInputBtn {
+    background: #0057FF;
+    border: 1px solid #0044C9;
+    height: 43px;
+    width: 43px;
+    border-radius: 4000px;
+    color: #fff;
+    font-weight: bold;
+    }
+    
+    .searchBtnBackground {
+    background: #0057FF;
+    border: 1px solid #0044C9;
+    }
+
+    .css-yk16xz-control {
+    background-color: transparent !important;
+
+    }
+
+
+    /*========================
+        Hero Banner Border Box
+    ==================*/
+
+
+.heroBorderBox {
+box-sizing: border-box;
+height: 436px;
+left: 75px;
+top: 162px;
+background: #FCFCFC;
+border: 1px solid #ADADAD;
+box-shadow: 0px 15px 11px -7px rgba(0, 0, 0, 0.09);
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hero-heading {
+width: 989px;
+height: 304px;
+font-family: 'Inter', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 59px;
+line-height: 76px;
+align-items: center;
+text-align: center;
+letter-spacing: -0.03em;
+color: #1E2329;
+}
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    color: #333f57;
+    text-align: center;
+    padding-top: 162px;
+    padding-bottom: 132px;
+}
+
+
+
+    /*====================================
+        Homepage Category Selector Bar 
+    ==============================*/
+.category-item {
+    background-color: #E3E3E3;
+    border-color: #D2D2D2;
+    color: #202020;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 300px;
+    border: 1px solid #D2D2D2;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+}
+    
+
+/*=============================
+Grid Card Styling
+=======================*/
+
+.card-item {
+border: none;
+max-width: 331px;
+
+}
+
+.card-content {
+    padding: 17px 0 0 0;
+    margin-top: -27px;
+    border:none;
+}
+.card-content-wrap {
+    border:none;
+}
+
+.card-image {
+width: 330px;
+height: 330px;
+border-radius: 19px;
+}
+
+.card-image .card__img {
+    width: 100%;
+    border-radius: 19px;
+    height: 100%;
+}
+.card-image:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s;
+}
+.card-title {
+
+}
+
+.card-price {
+        display: flex;
+        align-items: baseline;
+      }
+  
+  
+  .card-price__amount {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 60px;
+    align-items: center;
+    letter-spacing: -0.05em;
+    color: #444444;
+  }
+  
+  .card-price__label {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.1943px;
+    align-items: center;
+    letter-spacing: -0.05em;
+    color: #B4B4B4;
+  }
+
+  .card-title {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.3525px;
+    letter-spacing: -0.05em;
+    color: #1B1B1B;
+  }
+
+  .card-sub {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.1943px;
+    letter-spacing: -0.05em;
+    color: #6C6C6C;
+}
