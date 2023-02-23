@@ -10,11 +10,10 @@ function HighlightedCategory({categories}) {
                 <div className="highlight-lists d-flex">
                     {categories.map((list, index) => {
                         return (
-                            <div className="category-item radius-rounded" key={index}>
-                                <Link to={list.path} className="d-block">
-                                    <span className="icon-element">{list.icon}</span>
+                            <div key={index}>
+                                <div className="category-text radius-ellipsoid text-center bg-grey">
                                     {list.text}
-                                </Link>
+                                </div>
                             </div>
                         )
                     })}
@@ -32,5 +31,6 @@ function HighlightedCategory({categories}) {
         </>
     );
 }
+
 
 export default HighlightedCategory;

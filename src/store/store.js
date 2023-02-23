@@ -1,6 +1,6 @@
 import React from 'react'
 import {RiBuilding4Line, RiHotelBedLine, RiPlaneLine, RiReplyLine} from 'react-icons/ri';
-import {GiChickenOven, GiPineTree, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
+import {GiChickenOven, GiHouse, GiPineTree, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
 import {
     BsBookmark,
     BsBriefcase,
@@ -13,7 +13,6 @@ import {
     BsPencil
 } from 'react-icons/bs';
 import {MdClose, MdFitnessCenter, MdStar, MdStarBorder, MdStarHalf} from 'react-icons/md';
-import bannerbg1 from '../assets/images/hero-bg.jpg';
 import img1 from "../assets/images/img1.jpg"; // 263*175
 import img2 from "../assets/images/img7.jpg"; // 362*242
 import authorimg from "../assets/images/small-team1.jpg"; // 67*60
@@ -53,7 +52,7 @@ import cta2mobileimg from "../assets/images/mobile.png";
 import logo1 from "../assets/images/client-logo.png";
 import darklogo from "../assets/images/logo2.png";
 import {
-    FaBehance, FaCogs,
+    FaBehance, FaCampground, FaCogs,
     FaDribbble,
     FaFacebookF, FaInstagram,
     FaLinkedinIn, FaMinus, FaPlus, FaQuoteRight, FaRegComment, FaRegEdit,
@@ -101,51 +100,7 @@ import mainimage from "../assets/images/video-img.jpg"; // 750*500
 const sectiondata = {
     headermenu: [
         {
-            title: 'Home',
-            path: '/',
-            dropdown: [
-                {
-                    title: 'Home One',
-                    path: '/'
-                },
-                {
-                    title: 'Home Two',
-                    path: '/index2'
-                },
-                {
-                    title: 'Home Three',
-                    path: '/index3'
-                },
-                {
-                    title: 'Home Four',
-                    path: '/index4'
-                },
-                {
-                    title: 'Home Five',
-                    path: '/index5'
-                }
-            ]
-        },
-        {
-            title: 'categories',
-            path: '/all-categories',
-            dropdown: [
-                {
-                    title: 'all categories',
-                    path: '/all-categories'
-                },
-                {
-                    title: 'all locations',
-                    path: '/all-locations'
-                },
-                {
-                    title: 'top places',
-                    path: '/top-place'
-                }
-            ]
-        },
-        {
-            title: 'listings',
+            title: 'Places',
             path: '/listing-grid',
             dropdown: [
                 {
@@ -182,6 +137,30 @@ const sectiondata = {
                 }
             ]
         },
+        {
+            title: 'categories',
+            path: '/all-categories',
+            dropdown: [
+                {
+                    title: 'all categories',
+                    path: '/all-categories'
+                },
+                {
+                    title: 'all locations',
+                    path: '/all-locations'
+                },
+                {
+                    title: 'top places',
+                    path: '/top-place'
+                }
+            ]
+        },
+        {
+            title: 'communities',
+            path: '/communities',
+            dropdown: null,
+        }
+        /*
         {
             title: 'pages',
             path: '/user-profile',
@@ -261,47 +240,30 @@ const sectiondata = {
                     path: '/blog-single'
                 }
             ]
-        },
+        }, 
+        */
     ],
     herobanners: {
         banner1: {
-            title: 'What are you interested in ',
+            titlePrefix: 'Travel using crypto, earn ',
+            titleSuffix: ' by listing your space, and connect with your network like never before.',
             titleHighlight: [
                 {
                     active: true,
-                    text: 'Hotels'
+                    text: 'BTC'
                 },
                 {
                     active: false,
-                    text: 'Restaurants'
+                    text: 'USDC'
                 },
                 {
                     active: false,
-                    text: 'Shops'
+                    text: 'ETH'
                 },
-                {
-                    active: false,
-                    text: 'Salons'
-                },
-                {
-                    active: false,
-                    text: 'Apartments'
-                },
-                {
-                    active: false,
-                    text: 'Travels'
-                },
-                {
-                    active: false,
-                    text: 'Business'
-                },
-                {
-                    active: false,
-                    text: 'Fitness'
-                }
+
             ],
-            content: 'Discover the best places to stay, eat, shop & visit the city nearest to you.',
-            bgimage: bannerbg1,
+            content: 'See how it works.',
+            bgimage: null
         },
         banner2: {
             title: 'Find The Best Place in your city',
@@ -309,19 +271,20 @@ const sectiondata = {
             categories: [
                 {
                     path: '#',
-                    text: 'apartments',
-                    icon: <RiBuilding4Line />
+                    text: 'Stays',
+                    icon: <GiHouse />
                 },
                 {
                     path: '#',
-                    text: 'Restaurants',
-                    icon: <GiChickenOven />
+                    text: 'Co-Work',
+                    icon: <BsBriefcase />
                 },
                 {
                     path: '#',
-                    text: 'travel',
-                    icon: <RiPlaneLine />
+                    text: 'Retreats',
+                    icon: <FaCampground />
                 },
+                /*
                 {
                     path: '#',
                     text: 'Events',
@@ -337,17 +300,18 @@ const sectiondata = {
                     text: 'Hotels',
                     icon: <RiHotelBedLine />
                 }
+                */
             ],
-            bgimage: bannerbg1
+            bgimage: null
         },
         banner3: {
             title: 'What\'s Your Plan Today?',
             content: 'All the top locations – from restaurants and clubs, to galleries, famous places and more...',
-            bgimage: bannerbg1
+            bgimage: null
         },
         banner4: {
             sectitle: 'Find The Best Places To Be',
-            seccontent: 'Discover the best places to stay, eat, shop & visit the city nearest to you.',
+            seccontent: 'See how it works.',
             videobgsrc: slicevideo,
         },
     },
@@ -358,19 +322,20 @@ const sectiondata = {
             items: [
                 {
                     path: "#",
-                    title: "Apartments",
+                    title: "🏡 Stays",
                     icon: <RiBuilding4Line />
                 },
                 {
                     path: "#",
-                    title: "Restaurants",
+                    title: "🗄️ Co-Work",
                     icon: <GiChickenOven />
                 },
                 {
                     path: "#",
-                    title: "Travel",
+                    title: "🏕️ Retreats",
                     icon: <RiPlaneLine />
                 },
+                /*
                 {
                     path: "#",
                     title: "Events",
@@ -386,6 +351,7 @@ const sectiondata = {
                     title: "Hotels",
                     icon: <RiHotelBedLine />
                 }
+                */
             ]
         },
         browsecategories: {
@@ -413,6 +379,7 @@ const sectiondata = {
                     listingsNum: 7,
                     cardLink: '#'
                 },
+                /*
                 {
                     id: 4,
                     icon: <IoMdCut />,
@@ -476,30 +443,32 @@ const sectiondata = {
                     listingsNum: 10,
                     cardLink: '#'
                 }
+                */
             ]
         },
         browsecategories2: {
-            sectitle: 'Browse by Categories',
-            seccontent: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors.',
+            sectitle: 'Categories',
+            seccontent: '',
             categories: [
                 {
                     img: img1,
-                    icon: <GiChickenOven />,
-                    title: 'Restaurants',
+                    icon: <GiHouse />,
+                    title: 'Stays',
                     cardLink: '#'
                 },
                 {
                     img: img1,
-                    icon: <TiPlane />,
-                    title: 'Travels',
+                    icon: <BsBriefcase />,
+                    title: 'Co-Work',
                     cardLink: '#'
                 },
                 {
                     img: img1,
-                    icon: <RiHotelBedLine />,
-                    title: 'Hotels',
+                    icon: <FaCampground />,
+                    title: 'Retreats',
                     cardLink: '#'
                 },
+                /*
                 {
                     img: img1,
                     icon: <FiMusic />,
@@ -536,41 +505,32 @@ const sectiondata = {
                     title: 'Salons',
                     cardLink: '#'
                 },
-                {
-                    img: img1,
-                    icon: <FaRegMoneyBillAlt />,
-                    title: 'Jobs',
-                    cardLink: '#'
-                },
+
                 {
                     img: img1,
                     icon: <BsBriefcase />,
-                    title: 'Businesses',
+                    title: 'Co-Work',
                     cardLink: '#'
                 },
-                {
-                    img: img1,
-                    icon: <FaRegHospital />,
-                    title: 'Hospital',
-                    cardLink: '#'
-                }
+                */
             ]
         },
         popularcategories: {
-            title: 'Popular:',
+            title: 'Categories',
             lists: [
                 {
                     url: '#',
-                    title: 'Travel'
+                    title: 'Stays'
                 },
                 {
                     url: '#',
-                    title: 'Food'
+                    title: 'Retreats'
                 },
                 {
                     url: '#',
-                    title: 'Business'
+                    title: 'Co-work'
                 },
+                /* Not using these right now.
                 {
                     url: '#',
                     title: 'Salon'
@@ -579,71 +539,38 @@ const sectiondata = {
                     url: '#',
                     title: 'Cleaning'
                 }
+                */
             ]
         }
     },
     popularcategories: {
-        sectitle: 'Most Popular Categories',
+        sectitle: 'Categories',
         seccontent: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors.',
         categories: [
             {
-                icon: <GiChickenOven />,
-                title: 'Restaurants',
-                stitle: '12 Listings',
+                icon: <GiHouse />,
+                title: 'Stays',
+                stitle: '',
                 url: '#',
                 img: img1
             },
             {
-                icon: <TiPlane />,
-                title: 'Travels',
-                stitle: '22 Listings',
+                icon: <BsBriefcase />,
+                title: 'Co-Work',
+                stitle: '',
                 url: '#',
                 img: img1
             },
             {
-                icon: <RiHotelBedLine />,
-                title: 'Hotels',
-                stitle: '33 Listings',
+                icon: <FaCampground/>,
+                title: 'Retreats',
+                stitle: '',
                 url: '#',
                 img: img1
             },
-            {
-                icon: <IoMdMusicalNotes />,
-                title: 'Events',
-                stitle: '44 Listings',
-                url: '#',
-                img: img1
-            },
-            {
-                icon: <FiShoppingCart />,
-                title: 'Shops',
-                stitle: '48 Listings',
-                url: '#',
-                img: img1
-            },
-            {
-                icon: <IoIosFitness />,
-                title: 'Fitness',
-                stitle: '50 Listings',
-                url: '#',
-                img: img1
-            },
-            {
-                icon: <GiWineGlass />,
-                title: 'Food & Drink',
-                stitle: '14 Listings',
-                url: '#',
-                img: img1
-            },
-            {
-                icon: <TiBrush />,
-                title: 'Art & Design',
-                stitle: '20 Listings',
-                url: '#',
-                img: img1
-            }
         ],
         morecats: [
+            /*
             {
                 icon: <TiBrush />,
                 title: 'outdo0rs',
@@ -700,6 +627,7 @@ const sectiondata = {
                 url: '#',
                 img: img1
             }
+            */
         ]
     },
     populardestination: {
@@ -709,7 +637,7 @@ const sectiondata = {
             {
                 img: destinationimg1,
                 cityFlag: flag1,
-                cityName: 'Canada',
+                cityName: 'AUS',
                 listingTxt: '12 listings',
                 boxCol: '4',
                 cardUrl: '#'
@@ -717,7 +645,7 @@ const sectiondata = {
             {
                 img: img1,
                 cityFlag: flag2,
-                cityName: 'United States',
+                cityName: 'NYC',
                 listingTxt: '22 listings',
                 boxCol: '4',
                 cardUrl: '#'
@@ -725,7 +653,7 @@ const sectiondata = {
             {
                 img: img1,
                 cityFlag: flag3,
-                cityName: 'United Kingdom',
+                cityName: 'LA',
                 listingTxt: '32 listings',
                 boxCol: '4',
                 cardUrl: '#'
@@ -733,11 +661,12 @@ const sectiondata = {
             {
                 img: img1,
                 cityFlag: flag4,
-                cityName: 'Mexico',
+                cityName: 'CDMX',
                 listingTxt: '44 listings',
                 boxCol: '3',
                 cardUrl: '#'
             },
+            /*
             {
                 img: img1,
                 cityFlag: flag5,
@@ -778,8 +707,9 @@ const sectiondata = {
                 boxCol: '6',
                 cardUrl: '#'
             }
+            */
         ],
-        viewmorebtn: 'View All Destination',
+        viewmorebtn: 'View All Destinations',
         viewmorebtnurl: '/all-locations'
     },
     locations: [
@@ -1100,7 +1030,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.5'
+            ratingNum: '4.5',
+            price:'1 BTC'
         },
         {
             bedge: 'Closed',
@@ -1124,7 +1055,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
         {
             bedge: 'New Open',
@@ -1148,7 +1080,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
         {
             bedge: 'New Open',
@@ -1172,7 +1105,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.5'
+            ratingNum: '4.5',
+            price:'1 BTC'
         },
         {
             bedge: 'Closed',
@@ -1196,7 +1130,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
         {
             bedge: 'New Open',
@@ -1220,7 +1155,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
     ],
     placesgridmoreitems: [
@@ -1246,7 +1182,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.5'
+            ratingNum: '4.5',
+            price:'1 BTC'
         },
         {
             bedge: 'Closed',
@@ -1270,7 +1207,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
         {
             bedge: 'New Open',
@@ -1294,7 +1232,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
         {
             bedge: 'New Open',
@@ -1318,7 +1257,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.5'
+            ratingNum: '4.5',
+            price:'1 BTC'
         },
         {
             bedge: 'Closed',
@@ -1342,7 +1282,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
         {
             bedge: 'New Open',
@@ -1366,7 +1307,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
         {
             bedge: 'Closed',
@@ -1390,7 +1332,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
         {
             bedge: 'New Open',
@@ -1414,7 +1357,8 @@ const sectiondata = {
                 <IoMdStarHalf />,
                 <IoMdStar className="last-star" />,
             ],
-            ratingNum: '4.6'
+            ratingNum: '4.6',
+            price:'1 BTC'
         },
     ],
     listing: {
@@ -3964,6 +3908,11 @@ const sectiondata = {
                 'America',
                 'Arabic',
                 'England',
+            ],
+            currency: [
+                'BTC',
+                'ETH',
+                'USDC'
             ]
         }
     }

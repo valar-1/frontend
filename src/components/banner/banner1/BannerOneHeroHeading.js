@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function BannerOneHeroHeading({title, content, titleHighlight}) {
+export default function BannerOneHeroHeading({titlePrefix, content, titleHighlight, titleSuffix}) {
     return (
         <>
             <div className="hero-heading">
                 <div className="section-heading">
                     <h2 className="sec__title cd-headline zoom">
-                        {title}
+                        {titlePrefix}
                         <span className="cd-words-wrapper">
                             {titleHighlight.map((item, index) => {
                                 return (
@@ -14,6 +14,7 @@ export default function BannerOneHeroHeading({title, content, titleHighlight}) {
                                 )
                             })}
                         </span>
+                        {titleSuffix}
                     </h2>
                     <p className="sec__desc">
                         {content}

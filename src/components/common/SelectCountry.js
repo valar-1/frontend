@@ -6,7 +6,7 @@ const state = {
     countries: [
         {
             value: 's',
-            label: 'Select a Location'
+            label: 'Location'
         },
         {
             value: 'AF',
@@ -963,7 +963,7 @@ class SelectCountry extends Component {
         return (
             <>
                 <Select
-                    placeholder="Select a Location"
+                    placeholder="Location"
                     options={state.countries}
                 />
             </>

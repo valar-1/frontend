@@ -1,4 +1,6 @@
 import React  from 'react';
+import FooterLeftWidget from './FooterLeftWidget';
+import sectiondata from "../../../store/store";
 
 function CopyrightMenu({copyrightright}) {
     return (
@@ -21,6 +23,18 @@ function CopyrightMenu({copyrightright}) {
                             )
                         })}
                     </select>
+                </div>
+                <div className="select-field">
+                    <select name="currency" id="currency-switch">
+                        {copyrightright.currency.map((items, i) => {
+                            return (
+                                <option value={i} key={i}>{items}</option>
+                            )
+                        })}
+                    </select>
+                </div>
+                <div>
+                <FooterLeftWidget footerleftcnts={sectiondata.footerdata}/>
                 </div>
             </div>
         </>

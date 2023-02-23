@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react'
 import Navbar from './Navbar'
+import SearchInput from './SearchInput'
 import HeaderAuthorAccess from '../other/account/HeaderAuthorAccess'
 import Logo from './Logo'
 import logosrc from '../../assets/images/logo.png'
+
 
 export default function GeneralHeader() {
     useEffect(() => {
@@ -30,6 +32,9 @@ export default function GeneralHeader() {
                                     <div className="logo">
                                         <Logo url={logosrc} />
                                     </div>
+
+                                    {/* Search Bar */}
+                                    <SearchInput />
 
                                     {/* Navbar */}
                                     <Navbar />

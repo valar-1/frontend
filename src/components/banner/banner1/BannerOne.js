@@ -1,6 +1,5 @@
 import React from 'react'
 import BannerOneHeroHeading from './BannerOneHeroHeading'
-import BannerOneSearchInput from './BannerOneSearchInput'
 import BannerOneCategories from './BannerOneCategories'
 import sectiondata from "../../../store/store";
 
@@ -12,23 +11,15 @@ export default function BannerOne() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-
+                            <div className="heroBorderBox">
                             {/* Banner One Hero Heading */}
                             <BannerOneHeroHeading
-                                title={sectiondata.herobanners.banner1.title}
+                                titlePrefix={sectiondata.herobanners.banner1.titlePrefix}
                                 content={sectiondata.herobanners.banner1.content}
-                                titleHighlight={sectiondata.herobanners.banner1.titleHighlight} />
+                                titleHighlight={sectiondata.herobanners.banner1.titleHighlight}
+                                titleSuffix={sectiondata.herobanners.banner1.titleSuffix} />
 
-                            {/* Banner One Search Input */}
-                            <BannerOneSearchInput />
-
-                            {/* Banner One Categories */}
-                            <BannerOneCategories
-                                title={sectiondata.categories.featuredcategories.title}
-                                items={sectiondata.categories.featuredcategories.items}
-                                connector={sectiondata.categories.featuredcategories.connector}
-                            />
-
+                            </div>
                         </div>
                     </div>
                 </div>
