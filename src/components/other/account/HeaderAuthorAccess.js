@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FiPlus, FiPlusCircle, FiBookmark, FiSearch } from 'react-icons/fi';
+import { FiPlus, FiPlusCircle, FiBookmark, FiSearch, FiLogIn } from 'react-icons/fi';
 import { BsListCheck, BsQuestion, BsGear, BsPower } from 'react-icons/bs'
 import { AiOutlineUser } from 'react-icons/ai'
 import {Link} from "react-router-dom";
@@ -12,21 +12,9 @@ export default function HeaderAuthorAccess() {
     return (
         <>
             <div className="logo-right-content">
-                <ul className="author-access-list">
-                    <li>
-                        <Link to="/login">login</Link>
-                        <span className="or-text">or</span>
-                        <Link to="/sign-up">Sign up</Link>
-                    </li>
-                    <li>
-                        <Button text="add listing" url="/add-listing/new" >
-                            <FiPlusCircle />
-                        </Button>
-                    </li>
-                </ul>
-                <div className="side-user-menu-open" onClick={() => setAuthorAccessOpen(!AuthorAccessOpen)}>
-                    <AiOutlineUser />
-                </div>
+            <Button text="Sign In" url="/login" >
+                            <FiLogIn />
+            </Button>
             </div>
 
             {/* Side User panel */}

@@ -433,27 +433,24 @@ body {
 /*=== theme-btn ====*/
 .theme-btn {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   color: #fff;
   line-height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   text-transform: capitalize;
-  background-color: #ff6b6b;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  background-color: #0057ff;
   transition: all 0.3s;
-  -webkit-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
-  -moz-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
-  box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+  box-shadow: 0 0 40px rgb(82 85 90 / 10%);
   position: relative;
   display: inline-block;
   cursor: pointer;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
+  border-radius: 315px;
+  border-color: #0749ca;
+  width: max-content;
+  height: 48px;
+  text-align: center;
+} 
   .theme-btn:hover {
     background-color: #ea5555;
     color: #fff; }
@@ -2510,13 +2507,13 @@ body {
   .main-menu-content nav ul li {
     display: inline-block;
     text-transform: capitalize;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-right: 23px;
     position: relative; }
     .main-menu-content nav ul li a {
-      color: #fff;
-      font-size: 15px;
-      font-weight: 600;
+      color: #3D3D3D;
+      font-size: 14px;
+      font-weight: 500;
       display: block;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -2529,7 +2526,9 @@ body {
       .main-menu-content nav ul li a .la-angle-down {
         font-size: 13px; }
       .main-menu-content nav ul li a:hover {
-        color: #ff6b6b; }
+        font-weight:600 }
+        .main-menu-content nav ul li a:active {
+          border-bottom: 1px black solid; }
     .main-menu-content nav ul li .dropdown-menu-item {
       text-align: left;
       position: absolute;
@@ -2594,7 +2593,7 @@ body {
   position: relative;
   padding-top: 20px;
   z-index: 1;
-  padding-right: 55px; }
+  padding-right: 0px; }
   @media (max-width: 1199px) {
     .logo-right-content {
       width: 100%; } }
@@ -2685,7 +2684,6 @@ body {
         top: -13px; } }
 
 .header-menu-wrapper.header-fixed {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -2704,7 +2702,7 @@ body {
       padding-bottom: 30px; } }
   .header-menu-wrapper.header-fixed:after {
     height: 100%; }
-
+/*
 .header-menu-wrapper:after {
   position: absolute;
   content: '';
@@ -2712,13 +2710,14 @@ body {
   left: 0;
   width: 100%;
   height: 0;
-  background-color: #333f57;
+  background-color: #FCFCFC;
   z-index: -1;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
+*/
 
 .menu-full-width {
   display: flex;

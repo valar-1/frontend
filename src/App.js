@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from 'react';
 import { useLocation, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
+import 'react-dates-gte-react-17-21.8.0-version-fixed/initialize'; // import initialize from react-dates
+
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
