@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../components/common/GeneralHeader";
+import Header from "../components/common/Header";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Authors from "../components/sliders/Authors";
 import NewsLetter from "../components/other/cta/NewsLetter";
@@ -15,7 +15,7 @@ function TopAuthors() {
     return (
         <main className="top-authors">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Top Authors" MenuPgTitle="pages" img={state.breadcrumbimg} />

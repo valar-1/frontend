@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import BlogSidebar from "../../components/sidebars/BlogSidebar";
 import BlogFullWidthItems from "../../components/blogs/BlogFullWidthItems";
@@ -17,7 +17,7 @@ function BlogFullWidth() {
     return (
         <main className="blog-fullwidth-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Blog Full Width" MenuPgTitle="Blog" img={state.breadcrumbimg} />

@@ -15,6 +15,18 @@ import {
 import {MdClose, MdFitnessCenter, MdStar, MdStarBorder, MdStarHalf} from 'react-icons/md';
 import img1 from "../assets/images/img1.jpg"; // 263*175
 import img2 from "../assets/images/img7.jpg"; // 362*242
+
+import PLIMG2 from "../assets/images/placeImages/PLIMG2.jpeg";
+import PLIMG3 from "../assets/images/placeImages/PLIMG3.jpeg";
+import PLIMG4 from "../assets/images/placeImages/PLIMG4.jpeg";
+import PLIMG5 from "../assets/images/placeImages/PLIMG5.jpeg";
+import PLIMG6 from "../assets/images/placeImages/PLIMG6.jpeg";
+import PLIMG7 from "../assets/images/placeImages/PLIMG7.jpeg";
+import PLIMG8 from "../assets/images/placeImages/PLIMG8.jpeg";
+import PLIMG9 from "../assets/images/placeImages/PLIMG9.jpeg";
+
+
+
 import authorimg from "../assets/images/small-team1.jpg"; // 67*60
 import symble1 from "../assets/images/symble1.png";
 import symble2 from "../assets/images/symble2.png";
@@ -317,22 +329,25 @@ const sectiondata = {
     },
     categories: {
         featuredcategories: {
-            connector: 'or',
-            title: 'browse featured categories:',
+            connector: '',
+            title: 'Categories',
             items: [
                 {
                     path: "#",
-                    title: "🏡 Stays",
+                    displaytitle: "🏡  Stays",
+                    name: "stays",
                     icon: <RiBuilding4Line />
                 },
                 {
                     path: "#",
-                    title: "🗄️ Co-Work",
+                    displaytitle: "🗄️  Co-Work",
+                    name: "cowork",
                     icon: <GiChickenOven />
                 },
                 {
                     path: "#",
-                    title: "🏕️ Retreats",
+                    displaytitle: "🏕️  Retreats",
+                    name:"retreats",
                     icon: <RiPlaneLine />
                 },
                 /*
@@ -814,7 +829,7 @@ const sectiondata = {
             titleUrl: '#'
         }
     ],
-    howitworks: {
+/*     howitworks: {
         hiw1: {
             sectitle: 'Plan The Vacation of Your Dreams',
             seccontent: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors.',
@@ -1006,15 +1021,16 @@ const sectiondata = {
                 }
             ]
         }
-    },
+    }, */
     placesgrid: [
         {
             bedge: 'New Open',
-            title: 'Favorite Place Food Bank',
+            title: 'Elegant House',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG4,
+            categories: 'stays',
             cardType: 'Restaurant',
             cardTypeIcon: <GiChickenOven />,
             author: authorimg,
@@ -1035,11 +1051,12 @@ const sectiondata = {
         },
         {
             bedge: 'Closed',
-            title: 'beach blue boardwalk',
+            title: 'Beach House',
             titleIcon: '',
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG3,
+            categories: 'stays',
             cardType: 'Travel',
             cardTypeIcon: <RiPlaneLine />,
             author: authorimg,
@@ -1060,11 +1077,12 @@ const sectiondata = {
         },
         {
             bedge: 'New Open',
-            title: 'Hotel Govendor',
+            title: 'Cozy House',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG2,
+            categories: 'stays',
             cardType: 'Hotel',
             cardTypeIcon: <RiHotelBedLine />,
             author: authorimg,
@@ -1085,11 +1103,12 @@ const sectiondata = {
         },
         {
             bedge: 'New Open',
-            title: 'Favorite Place Food Bank',
+            title: 'Cafe Office',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG4,
+            categories: 'cowork',
             cardType: 'Restaurant',
             cardTypeIcon: <GiChickenOven />,
             author: authorimg,
@@ -1110,11 +1129,12 @@ const sectiondata = {
         },
         {
             bedge: 'Closed',
-            title: 'beach blue boardwalk',
+            title: 'Tower Office',
             titleIcon: '',
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG6,
+            categories: 'cowork',
             cardType: 'Travel',
             cardTypeIcon: <RiPlaneLine />,
             author: authorimg,
@@ -1135,11 +1155,12 @@ const sectiondata = {
         },
         {
             bedge: 'New Open',
-            title: 'Hotel Govendor',
+            title: 'Hacker Office',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG9,
+            categories: 'cowork',
             cardType: 'Hotel',
             cardTypeIcon: <RiHotelBedLine />,
             author: authorimg,
@@ -1158,15 +1179,14 @@ const sectiondata = {
             ratingNum: '4.6',
             price:'1 BTC'
         },
-    ],
-    placesgridmoreitems: [
         {
             bedge: 'New Open',
-            title: 'Favorite Place Food Bank',
+            title: 'Camp Davidt',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image:img1,
+            image: PLIMG8,
+            categories: 'retreats',
             cardType: 'Restaurant',
             cardTypeIcon: <GiChickenOven />,
             author: authorimg,
@@ -1187,11 +1207,12 @@ const sectiondata = {
         },
         {
             bedge: 'Closed',
-            title: 'beach blue boardwalk',
+            title: 'Camp Maroon',
             titleIcon: '',
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG7,
+            categories: 'retreats',
             cardType: 'Travel',
             cardTypeIcon: <RiPlaneLine />,
             author: authorimg,
@@ -1212,11 +1233,12 @@ const sectiondata = {
         },
         {
             bedge: 'New Open',
-            title: 'Hotel Govendor',
+            title: 'Camp Govendor',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG6,
+            categories: 'retreats',
             cardType: 'Hotel',
             cardTypeIcon: <RiHotelBedLine />,
             author: authorimg,
@@ -1237,11 +1259,12 @@ const sectiondata = {
         },
         {
             bedge: 'New Open',
-            title: 'Favorite Place Food Bank',
+            title: 'Camp Mabry',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG5,
+            categories: 'retreats',
             cardType: 'Restaurant',
             cardTypeIcon: <GiChickenOven />,
             author: authorimg,
@@ -1262,11 +1285,12 @@ const sectiondata = {
         },
         {
             bedge: 'Closed',
-            title: 'beach blue boardwalk',
+            title: 'Lovely House',
             titleIcon: '',
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG4,
+            categories: 'stays',
             cardType: 'Travel',
             cardTypeIcon: <RiPlaneLine />,
             author: authorimg,
@@ -1287,11 +1311,12 @@ const sectiondata = {
         },
         {
             bedge: 'New Open',
-            title: 'Hotel Govendor',
+            title: 'Office Space',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG3,
+            categories: 'cowork',
             cardType: 'Hotel',
             cardTypeIcon: <RiHotelBedLine />,
             author: authorimg,
@@ -1312,11 +1337,12 @@ const sectiondata = {
         },
         {
             bedge: 'Closed',
-            title: 'beach blue boardwalk',
+            title: 'Camp Plaza',
             titleIcon: '',
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG2,
+            categories: 'retreats',
             cardType: 'Travel',
             cardTypeIcon: <RiPlaneLine />,
             author: authorimg,
@@ -1337,11 +1363,12 @@ const sectiondata = {
         },
         {
             bedge: 'New Open',
-            title: 'Hotel Govendor',
+            title: 'Cabin Home',
             titleIcon: <IoIosCheckmarkCircle />,
             titleUrl: '/listing-details',
             stitle: 'Bishop Avenue, New York',
-            image: img2,
+            image: PLIMG5,
+            categories: 'stays',
             cardType: 'Hotel',
             cardTypeIcon: <RiHotelBedLine />,
             author: authorimg,

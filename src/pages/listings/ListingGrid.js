@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import PlaceGrid from "../../components/places/PlaceGrid";
 import Button from "../../components/common/Button";
@@ -18,7 +18,7 @@ function ListingGrid() {
     return (
         <main className="listing-grid">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Listing Grid" MenuPgTitle="Listings" img={state.bdimg}/>

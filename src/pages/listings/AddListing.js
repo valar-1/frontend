@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import GeneralInfo from "../../components/addlisting/GeneralInfo";
 import AddLocation from "../../components/addlisting/AddLocation";
@@ -22,7 +22,7 @@ function AddListing() {
     return (
         <main className="add-listing">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Add Listing" MenuPgTitle="Listings" img={states.breadcrumbimg} />

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {Link} from "react-router-dom";
@@ -62,7 +62,7 @@ function Dashboard() {
     return (
         <main className="dashboard-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Dashboard" MenuPgTitle="pages" img={sectiondata.dashboard.breadcrumbimg} />

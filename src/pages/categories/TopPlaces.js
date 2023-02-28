@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import PopularDestination from "../../components/places/PopularDestination";
 import Button from "../../components/common/Button";
@@ -17,7 +17,7 @@ function TopPlaces() {
     return (
         <main className="top-places">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Top Places" MenuPgTitle="Categories" img={state.breadcrumbImg} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import {FiRefreshCw} from "react-icons/fi";
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
 import NewsLetter from "../../components/other/cta/NewsLetter";
@@ -16,7 +16,7 @@ function ListMapView2() {
     return (
         <main className="List-map-view2">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Place List */}
             <section className="card-area margin-top-190px padding-bottom-100px">

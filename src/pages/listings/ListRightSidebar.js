@@ -1,7 +1,7 @@
 import React from 'react';
 import {BsGrid, BsListUl} from "react-icons/bs";
 import {FiRefreshCw} from "react-icons/fi";
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import {Link} from "react-router-dom";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
@@ -81,7 +81,7 @@ function ListRightSidebar() {
     return (
         <main className="list-right-sidebar">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="List Right Sidebar" MenuPgTitle="Listings" img={state.breadImg} />

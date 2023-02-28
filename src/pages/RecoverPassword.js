@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../components/common/GeneralHeader";
+import Header from "../components/common/Header";
 import Breadcrumb from "../components/common/Breadcrumb";
 import RecoverPassBox from "../components/other/account/RecoverPassBox";
 import NewsLetter from "../components/other/cta/NewsLetter";
@@ -15,7 +15,7 @@ function RecoverPassword() {
     return (
         <main className="recover-pass-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Recover Password" MenuPgTitle="Pages" img={state.breadcrumbimg} />

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import GeneralHeader from "../../common/GeneralHeader";
+import Header from "../../common/Header";
 import Breadcrumb from "../../common/Breadcrumb";
 import UserSidebar from "./UserSidebar";
 import PlaceGrid from "../../places/PlaceGrid";
@@ -17,7 +17,7 @@ function UserProfile() {
     return (
         <main className="user-profile">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="User Profile" MenuPgTitle="Pages"  img={states.BreadcrumbImg} />

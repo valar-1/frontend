@@ -1,6 +1,6 @@
 import React from 'react';
 import {FiRefreshCw} from "react-icons/fi";
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import PlaceListing from "../../components/places/PlaceListing";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
@@ -15,7 +15,7 @@ function ListMapView() {
     return (
         <main className="List-map-view">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Mapview */}
             <MapViewCluster />

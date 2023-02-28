@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../components/common/GeneralHeader";
+import Header from "../components/common/Header";
 import Breadcrumb from "../components/common/Breadcrumb";
 import AskQuestionField from "../components/contact/AskQuestionField";
 import ContactSidebar from "../components/sidebars/ContactSidebar";
@@ -19,7 +19,7 @@ function Contact() {
     return (
         <main className="contact-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Contact Us" MenuPgTitle="pages" img={state.breadcrumbimg} />

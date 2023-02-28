@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import BlogGridItems from "../../components/blogs/BlogGridItems";
 import Pagination from "../../components/blogs/Pagination";
@@ -16,7 +16,7 @@ function BlogGrid() {
     return (
         <main className="blog-grid-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Blog Grid" MenuPgTitle="Blog" img={state.breadcrumbimg} />

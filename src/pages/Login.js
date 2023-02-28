@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../components/common/GeneralHeader";
+import Header from "../components/common/Header";
 import Breadcrumb from "../components/common/Breadcrumb";
 import LoginBox from "../components/other/account/LoginBox";
 import NewsLetter from "../components/other/cta/NewsLetter";
@@ -15,7 +15,7 @@ function Login() {
     return (
         <main className="login-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Login" img={state.breadcrumbimg} />

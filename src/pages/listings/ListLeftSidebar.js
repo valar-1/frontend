@@ -1,6 +1,6 @@
 import React from 'react';
 import {FiRefreshCw} from "react-icons/fi";
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
@@ -19,7 +19,7 @@ function ListLeftSidebar() {
     return (
         <main className="list-left-sidebar">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="List Left Sidebar" MenuPgTitle="Listings" img={state.breadcrumbimg} />

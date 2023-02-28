@@ -1,6 +1,6 @@
 import React from 'react';
 import {FiRefreshCw} from "react-icons/fi";
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import PlaceListing from "../../components/places/PlaceListing";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
@@ -19,7 +19,7 @@ function ListingList() {
     return (
         <main className="listing-list">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Listing List" MenuPgTitle="Listings" img={state.breadcrumbimg} />

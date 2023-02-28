@@ -1,6 +1,6 @@
 import React from 'react';
 import SignUpBox from "../components/other/account/SignUpBox";
-import GeneralHeader from "../components/common/GeneralHeader";
+import Header from "../components/common/Header";
 import Breadcrumb from "../components/common/Breadcrumb";
 import NewsLetter from "../components/other/cta/NewsLetter";
 import Footer from "../components/common/footer/Footer";
@@ -15,7 +15,7 @@ function SignUp() {
     return (
         <main className="signup-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Sign Up" img={state.breadcrumbimg} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../components/common/GeneralHeader";
+import Header from "../components/common/Header";
 import ImageBox from "../components/about/ImageBox";
 import About2 from "../components/about/About2";
 import FunFactsThree from "../components/other/funfacts/FunFactsThree";
@@ -19,7 +19,7 @@ function About() {
     return (
         <main className="about-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
 
             <section className="blog-area padding-top-50px padding-bottom-80px before-none after-none">

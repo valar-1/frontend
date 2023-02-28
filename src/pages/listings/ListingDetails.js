@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import ListingDetailsBreadcrumb from "./ListingDetailsBreadcrumb";
 import ListingDetailsSidebar from "../../components/sidebars/ListingDetailsSidebar";
 import ListingDetailsGallery from "../../components/sliders/ListingDetailsGallery";
@@ -35,7 +35,7 @@ class ListingDetails extends Component {
         return (
             <main className="listing-details">
                 {/* Header */}
-                <GeneralHeader />
+                <Header />
 
                 {/* Breadcrumb */}
                 <ListingDetailsBreadcrumb title={sectiondata.listingDetails.title} />

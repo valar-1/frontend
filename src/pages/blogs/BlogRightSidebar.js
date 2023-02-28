@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import BlogSidebar from "../../components/sidebars/BlogSidebar";
 import BlogTwoColumns from "../../components/blogs/BlogTwoColumns";
@@ -18,7 +18,7 @@ function BlogRightSidebar() {
     return (
         <main className="blog-left-sidebar-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Blog Right Sidebar" MenuPgTitle="Blog" img={state.breadcrumbimg} />

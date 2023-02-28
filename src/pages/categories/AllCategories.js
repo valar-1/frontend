@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import PopularCategories from "../../components/other/categories/PopularCategories";
 import NewsLetter from "../../components/other/cta/NewsLetter";
@@ -16,7 +16,7 @@ function AllCategories() {
     return (
         <main className="all-categories">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="All Categories" MenuPgTitle="Categories" img={state.breadcrumbImg} />

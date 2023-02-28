@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import { FiCheckCircle } from 'react-icons/fi'
 import Button from "../../components/common/Button";
 import Footer from "../../components/common/footer/Footer";
@@ -9,7 +9,7 @@ function BookingConfirmation() {
     return (
         <main className="booking-confirmation-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
             <section className="booking-confirm-area padding-top-200px padding-bottom-140px overflow-hidden">
                 <div className="container">

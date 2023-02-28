@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../components/common/GeneralHeader";
+import Header from "../components/common/Header";
 
 import FaqCategories from "../components/other/categories/FaqCategories";
 import AccordionList from "../components/other/AccordionList";
@@ -15,7 +15,7 @@ function Faq() {
     return (
         <main className="faq-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
 
             {/* Category */}

@@ -1,53 +1,63 @@
-import React  from 'react'
-import GeneralHeader from '../../components/common/GeneralHeader'
-import BannerOne from '../../components/banner/banner1/BannerOne'
-import Footer from "../../components/common/footer/Footer";
-import ScrollTopBtn from "../../components/common/ScrollTopBtn";
-import sectiondata from "../../store/store";
-import BannerOneCategories from "/Users/thomivy/Desktop/Valar/valar-frontend/src/components/banner/banner1/BannerOneCategories.js"
+import React, { useState, useEffect } from 'react';
+import Header from '../../components/common/Header';
+import AnnouncementBar from '../../components/common/AnnouncementBar';  // import AnnouncementBar component
+import Footer from '../../components/common/footer/Footer';
+import ScrollTopBtn from '../../components/common/ScrollTopBtn';
+import sectiondata from '../../store/store';
+import CategoriesFilterBar from '../../components/common/CategoriesFilterBar';
 import PlaceGrid from '../../components/places/PlaceGrid';
 
-function Home() {
-    return (
-        <main className="home-1">
-            {/* Header Nav */}
-            <GeneralHeader />
+function Home({ search }) {
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [filteredGridItems, setFilteredGridItems] = useState(sectiondata.placesgrid);
 
-            {/* Hero Banner */}
-            <BannerOne />
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+  };
 
-            {/* Grid of Places */}
-            
-            <section className="card-area text-center padding-bottom-100px">
-                <div className="container">
-                    
-                            {/* Banner One Categories */}
-                            <BannerOneCategories
-                                title={sectiondata.categories.featuredcategories.title}
-                                items={sectiondata.categories.featuredcategories.items}
-                                connector={sectiondata.categories.featuredcategories.connector}
-                            />
+  useEffect(() => {
+    if (selectedCategory === "all") {
+      setFilteredGridItems(sectiondata.placesgrid);
+    } else {
+      setFilteredGridItems(sectiondata.placesgrid.filter((item) => {
+        return item.categories && item.categories.includes(selectedCategory);
+      }));
+    }
+  }, [selectedCategory, sectiondata.placesgrid]);
 
+  return (
+    <main className="home">
 
-                       {/* Place Grid */}
-            <section className="card-area padding-top-40px padding-bottom-100px">
-                <div className="container">
-                    <div className="row">
-                        <PlaceGrid griditems={sectiondata.placesgrid} />
-                    </div>
-                </div>
-            </section>
-                </div>
-            </section>
+      {/* Announcement Bar */}
+      <AnnouncementBar />
 
+      {/* Header / Nav */}
+      <Header />
 
+      {/* Listings */}
+      <section className="card-area text-center padding-bottom-100px">
+        <div className="fluid-80pxPadding-container">
+          {/* Category Filter */}
+          <CategoriesFilterBar
+            title={sectiondata.categories.featuredcategories.title}
+            items={sectiondata.categories.featuredcategories.items.map((category) => ({
+              text: category.displaytitle,
+              value: category.name,
+            }))}
+            onCategorySelect={handleCategorySelect}
+          />
 
-            {/* Footer */}
-            <Footer />
+          {/* Place Grid */}
+          <PlaceGrid griditems={filteredGridItems} />
+        </div>
+      </section>
 
-            <ScrollTopBtn />
-        </main>
-    )
+      {/* Footer */}
+      <Footer />
+
+      <ScrollTopBtn />
+    </main>
+  );
 }
 
 export default Home;

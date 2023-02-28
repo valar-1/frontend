@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralHeader from "../../components/common/GeneralHeader";
+import Header from "../../components/common/Header";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import PersonalInfo from "../../components/other/account/PersonalInfo";
 import WidgetBookingProduct from "../../components/sidebars/widgets/WidgetBookingProduct";
@@ -30,7 +30,7 @@ function Booking() {
     return (
         <main className="booking-page">
             {/* Header */}
-            <GeneralHeader/>
+            <Header/>
 
             {/* Breadcrumb */}
             <Breadcrumb CurrentPgTitle="Booking" MenuPgTitle="pages" img={state.breadcrumbimg}/>

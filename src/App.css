@@ -1,5 +1,3 @@
-
-
 body {
     font-size: 16px;
     line-height: 24px;
@@ -8,14 +6,25 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 *:focus {
     outline: none;
 }
+
 a {
     text-decoration: none !important;
 }
-h1, h2, h3, h4, h5, h6, p,
-dl, ol, ul {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+ol,
+ul {
     margin: 0;
 }
 
@@ -29,16 +38,19 @@ dl, ol, ul {
         max-width: 540px;
     }
 }
+
 @media (min-width:768px) {
     .container {
         max-width: 720px;
     }
 }
+
 @media (min-width:992px) {
     .container {
         max-width: 960px;
     }
 }
+
 @media (min-width:1200px) {
     .container {
         max-width: 1200px;
@@ -54,6 +66,7 @@ dl, ol, ul {
     height: 100%;
     z-index: 9999999;
 }
+
 .modal-video:before {
     content: '';
     background: #0b0b0b;
@@ -64,23 +77,28 @@ dl, ol, ul {
     height: 100%;
     opacity: 0.8;
 }
-.modal-video  .modal-video-body {
+
+.modal-video .modal-video-body {
     height: 100%;
 }
-.modal-video  .modal-video-inner {
+
+.modal-video .modal-video-inner {
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: center;
 }
-.modal-video  .modal-video-inner .modal-video-movie-wrap {
+
+.modal-video .modal-video-inner .modal-video-movie-wrap {
     padding: 0 !important;
     position: relative;
 }
-.modal-video  .modal-video-inner .modal-video-movie-wrap iframe {
+
+.modal-video .modal-video-inner .modal-video-movie-wrap iframe {
     width: 1100px;
     height: 600px;
 }
+
 .modal-video-close-btn {
     width: 40px;
     height: 40px;
@@ -90,15 +108,18 @@ dl, ol, ul {
     background: #fff;
     transition: background-color .3s;
 }
+
 .modal-video-close-btn:hover {
     background: #ff6b6b;
 }
+
 .modal-video-close-btn:before {
     content: 'x';
     font-size: 24px;
     font-weight: 600;
     transition: .3s;
 }
+
 .modal-video-close-btn:hover:before {
     color: white;
 }
@@ -119,14 +140,15 @@ dl, ol, ul {
     width: 40px;
     height: 40px;
     line-height: 38px;
-    -webkit-box-shadow: 0 0 0 4px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 0 0 4px rgba(0,0,0,0.5);
-    box-shadow: 0 0 0 4px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
     border: 2px solid #393939;
     -webkit-transition: all 300ms linear;
     transition: all 300ms linear;
     animation: cluster-animation 1.5s infinite;
 }
+
 .cluster-marker:hover {
     background: #808996;
 }
@@ -138,115 +160,396 @@ dl, ol, ul {
     Search Input Bar
 ========================================*/
 
+
+.fluid-80pxPadding-container {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.searchForm {
+    display: flex;
+}
+
+.search-bar-wrapper {
+    width: 65%;
+    display: flex;
+}
+/* set the baseline to 14pt */
 .searchContainer {
-    height: 50px;
-    margin-left: 34px;
-    margin-top: 24px;
-    
+    font-size: 14pt;
+    font-family: 'Inter', Arial, sans-serif;
+    height: 65px;
     background: #FFFFFF;
     border: 1px solid #DFDFDF;
     box-shadow: 0px 4.45px 9px -3px rgb(0 0 0 / 7%);
     border-radius: 346.833px;
     display: flex;
-    flex-direction: row;
-    flex-basis: auto;
-    }
-    
-    .searchInputDivider {
+    align-items: center;
+    padding: 0 10px 0 25px;
+}
 
-    width: 30.06px;
-    height: 0px;
-    left: 588.87px;
-    top: 35.13px;
-    transform: rotate(90deg);
-    }
-    
-    .searchPeopleField { 
+.searchInputContainer {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
 
 
+/* adjust the date picker field to fit within one line */
+.DateRangePicker {
+    max-width: 170px;
+}
 
-    }
-    
-    .searchDateField {
-    min-width:120px;
-    line-height: 50px;
+#searchForm>div>div:nth-child(1)>div>input {
+    border: none;
+    background: transparent;
+    max-width: 42px;
+    color: #383838;
+    font-size: 14px;
+    margin-left: 11px;
+}
 
-    }
-    
-    .searchLocationField {
-    flex:auto;
-    width:213px;
-    line-height: 50px;
-    min-height: 50px;
-    }
-    
-    .searchInputBtn {
+/* adjust the input field to fit within one line */
+.form-control {
+    height: 40px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.css-1uccc91-singleValue {
+    color: hsl(0deg 0% 46%) !important;
+    margin-left: 2px;
+    margin-right: 2px;
+    max-width: calc(100% - 8px);
+    overflow: hidden;
+    position: relative !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: none !important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    line-height: 38px;
+    display: contents;
+    font-size: 14px !important;
+}
+
+/* adjust the location field to fit within one line */
+.react_select_searchInput__searchLocationField .css-ldpzey-control {
+    height: 40px;
+}
+
+/* adjust the submit button to be on the far right */
+.searchBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+/* adjust the background and border of the submit button */
+.searchInputBtn {
     background: #0057FF;
-    border: 1px solid #0044C9;
-    height: 43px;
-    width: 43px;
-    border-radius: 4000px;
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
     color: #fff;
     font-weight: bold;
-    line-height: 50px;
-    }
-    
-    .searchBtnBackground {
+    line-height: 35px;
+    margin-left: 10px;
+}
+
+
+.searchBtnBackground {
     background: #0057FF;
     border: 1px solid #0044C9;
-    }
-
-    .css-yk16xz-control {
-    background-color: transparent !important;
-
-    }
-
-
-    /*========================
-        Hero Banner Border Box
-    ==================*/
-
-
-.heroBorderBox {
-box-sizing: border-box;
-height: 436px;
-left: 75px;
-top: 162px;
-background: #FCFCFC;
-border: 1px solid #ADADAD;
-box-shadow: 0px 15px 11px -7px rgba(0, 0, 0, 0.09);
-border-radius: 50px;
-display: flex;
-justify-content: center;
-align-items: center;
 }
 
-.hero-heading {
-width: 989px;
-height: 304px;
-font-family: 'Inter', Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 59px;
-line-height: 76px;
-align-items: center;
-text-align: center;
-letter-spacing: -0.03em;
-color: #1E2329;
+
+
+.DateRangePickerInput_arrow_svg {
+    vertical-align: middle;
+    fill: #484848;
+    width: 18px;
 }
 
-.hero-wrapper {
+
+
+.css-1okebmr-indicatorSeparator {
+    display: none;
+}
+
+.css-1wa3eu0-placeholder {
+    display: contents;
+    color: hsl(0, 0%, 50%);
+    margin-left: 2px;
+    margin-right: 2px;
     position: relative;
+    top: none;
+    box-sizing: border-box;
+    line-height: 38px;
+    justify-items: center;
+}
+
+.css-1bb3rla-control {
+    font-size: 14px;
+    color: #484848;
+}
+
+
+.css-1n6qo8p-IndicatorsContainer {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 38px;
+}
+
+#searchForm>div>button>svg {
+    margin-bottom: 3px;
+    height: 12px;
+
+}
+
+.css-26l3qy-menu {
+    top: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 19px 19px;
+    box-shadow: 0px 1px 3px 0px hsl(0deg 0% 0% / 10%), 0 9px 11px hsl(0deg 0% 0% / 10%);
+    margin-bottom: 22px;
+    margin-top: 6px;
+    position: absolute;
     width: 100%;
     z-index: 1;
-    text-align: center;
-    padding-top: 162px;
-    padding-bottom: 132px;
+    box-sizing: border-box;
+    border-top: none;
+    font-size: 14px;
+}
+
+.css-1n6qo8p-IndicatorsContainer {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 38px;
+}
+
+.css-2b097c-container {
+    width: 96px;
+}
+
+.css-16hg2dp-control {
+    margin-left: 0 !important;
+}
+
+.react_select_searchInput__searchLocationField .css-ldpzey-control {
+    border: none !important;
+    background-color: transparent !important;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 15px !important;
+    line-height: 1.5;
+    color: #1E2329 !important;
+    height: 38px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.DateRangePickerInput__withBorder {
+    border: none;
+}
+
+.DateInput {
+    width: 72px;
+}
+
+.DateInput_input {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 40px;
+    color: #7c7c7c;
+    background-color: transparent;
+    width: 70px;
+    padding: 0;
+    border: none;
+    display: inline-flex;
+}
+
+
+.DateRangePickerInput_arrow {
+    display: inline;
+    vertical-align: middle;
+    color: #484848;
+    padding: 0 12px 0 3px;
+    line-height: 36px;
+}
+
+
+.DateRangePickerInput {
+    background-color: transparent;
+    display: flex;
+}
+
+.form-control {
+    border: none !important;
+    background-color: transparent !important;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 14px !important;
+    color: #1E2329 !important;
+    line-height: 38px;
+    padding: 0 0.75rem 0 1.75rem;
+    max-width: 105px;
+}
+
+.Select__control {
+    border: none !important;
+    background-color: transparent !important;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 15px !important;
+    line-height: 1.5;
+    color: #1E2329 !important;
+    height: 38px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.css-yk16xz-control,
+.css-g1d714-ValueContainer {
+    height: 42px !important;
+    width: 100% !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 14px !important;
+}
+
+.css-yk16xz-control {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 14px !important;
+    margin-left: 10px !important;
+}
+
+.searchBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    /* adjust width as necessary */
+    height: 38px;
+    /* adjust height as necessary */
+}
+
+.searchContainer>div:nth-child(-n+2)::after {
+    content: '';
+    display: block;
+    height: 24px;
+    margin: 0px 10px 0px 13px;
+    border-right: 1px solid #DFDFDF;
+}
+
+.css-9ck2gt-control {
+    margin-left: 0 !important;
+}
+
+#searchForm>div>div:nth-child(1)>div>div.searchInputField>input {
+    width: 40px;
+    font-size: 14px;
+    border: none;
+    color: grey;
+    margin-left: 10px;
+}
+
+#searchForm>div>div:nth-child(1)>div.searchInputIcon {
+    margin-left: 21px;
+}
+
+
+#searchForm>div>div:nth-child(2)>div.searchInputIcon {
+    margin-right: 10px;
+}
+
+#searchForm>div>div:nth-child(3)>div>div.searchInputIcon {
+    margin-left: -3px;
+}
+
+.css-g1d714-ValueContainer {
+    padding: 0 !important;
+}
+
+.searchInputIcon {
+    margin-right: 8px;
+    display: flex;
 }
 
 
 
-    /*====================================
+#searchForm>div>div.peopleInputContainer>input[type=text] {
+    color: #757575;
+    border: none;
+    background: transparent;
+    margin-left: 26px;
+    font-size: 14px;
+    width: 72px;
+}
+
+.peopleInputContainer {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.peopleInputContainer>.react-select-container {
+    flex: 1;
+}
+
+.peopleInputContainer>.react-select-container>.react-select__control {
+    height: 42px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.peopleInputContainer>.react-select-container>.react-select__control>.react-select__indicators {
+    display: none
+}
+
+/*====================================
         Homepage Category Selector Bar 
     ==============================*/
 .category-item {
@@ -263,94 +566,20 @@ color: #1E2329;
     padding-bottom: 4px;
     margin-right: 10px;
 }
-    
 
-/*=============================
-Grid Card Styling
-=======================*/
-
-.card-item {
-border: none;
-max-width: 331px;
-
+.category-item.active {
+    background-color: #202020;
+    color: #fff;
 }
 
-.card-content {
-    padding: 17px 0 0 0;
-    margin-top: -27px;
-    border:none;
-}
-.card-content-wrap {
-    border:none;
+.category-item.hover {
+    background-color: #D2D2D2;
+    color: #202020;
 }
 
-.card-image {
-width: 330px;
-height: 330px;
-border-radius: 19px;
-}
 
-.card-image .card__img {
-    width: 100%;
-    border-radius: 19px;
-    height: 100%;
-}
-.card-image:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: 4px 4px 0 0;
-    transition: all 0.3s;
-}
-.card-title {
-
-}
-
-.card-price {
-        display: flex;
-        align-items: baseline;
-      }
-  
-  
-  .card-price__amount {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 60px;
+.navlinks-login-container {
+    display: flex;
     align-items: center;
-    letter-spacing: -0.05em;
-    color: #444444;
-  }
-  
-  .card-price__label {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.1943px;
-    align-items: center;
-    letter-spacing: -0.05em;
-    color: #B4B4B4;
-  }
-
-  .card-title {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22.3525px;
-    letter-spacing: -0.05em;
-    color: #1B1B1B;
-  }
-
-  .card-sub {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17.1943px;
-    letter-spacing: -0.05em;
-    color: #6C6C6C;
+    justify-content: flex-end;
 }
