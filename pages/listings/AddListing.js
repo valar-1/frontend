@@ -9,7 +9,7 @@ import Amenities from "../../components/addlisting/Amenities";
 import OpeningHours from "../../components/addlisting/OpeningHours";
 import AddPrice from "../../components/addlisting/AddPrice";
 import NewsLetter from "../../components/other/cta/NewsLetter";
-import Footer from "../../components/common/footer/Footer";
+import Footer from "../../components/common/Footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import Link from 'next/link';
 import breadcrumbimg from '../../public/images/bread-bg.jpg'

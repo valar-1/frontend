@@ -7,7 +7,7 @@ import SectionsHeading from "../components/common/SectionsHeading";
 import AskQuestionField from "../components/contact/AskQuestionField";
 import IconBoxTwo from "../components/other/iconboxes/IconBoxTwo";
 import NewsLetter from "../components/other/cta/NewsLetter";
-import Footer from "../components/common/footer/Footer";
+import Footer from "../components/common/Footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 import sectiondata from "../data/store";
 

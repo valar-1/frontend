@@ -7,7 +7,7 @@ import GeneralMap from "../components/contact/GeneralMap";
 import { FiPhone } from 'react-icons/fi'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { GoLocation } from 'react-icons/go'
-import Footer from "../components/common/footer/Footer";
+import Footer from "../components/common/Footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 import breadcrumbimg from '../public/images/bread-bg.jpg'
 import sectiondata from "../data/store";

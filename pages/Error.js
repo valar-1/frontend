@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Button from "../components/common/Button";
 import { RiReplyLine } from 'react-icons/ri'
-import Copyright from "../components/common/footer/Copyright";
+import Copyright from "../components/common/Footer/Copyright";
 import errorimg from '../public/images/404-img.png'
 
 const state = {

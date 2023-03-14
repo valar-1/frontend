@@ -2,12 +2,12 @@ import React from 'react';
 import Logo from "../Logo";
 import SocialProfile from "../../other/account/SocialProfile";
 
-function FooterLeftWidget({footerleftcnts}) {
+function FooterLeftWidget({Footerleftcnts}) {
     return (
         <>
             <div> 
-                <div className="footer-item">
-                        <SocialProfile socials={footerleftcnts.sociallinks} />
+                <div className="Footer-item">
+                        <SocialProfile socials={Footerleftcnts.sociallinks} />
                 </div>
             </div>
         </>

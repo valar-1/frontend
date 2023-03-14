@@ -12,7 +12,7 @@ export default function Logo({ className }) {
   return (
     <Link href="/" className={className}>
       {isImageLoaded ? (
-        <img src={'/images/ValleyLogoSVG.svg'} class="home-logo" alt="logo" onError={handleImageError} />
+        <img src={'/images/ValleyLogoSVG.svg'} className="home-logo" alt="logo" onError={handleImageError} />
       ) : (
         <h2 style={{ fontSize: '3em' }}>Valley</h2>
       )}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConnectButton, RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
+import { ConnectButton, darkTheme, RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
 import { WagmiConfig, createClient, configureChains, mainnet } from 'wagmi';
 import { publicProvider } from 'wagmi/providers/public';
 import '@rainbow-me/rainbowkit/styles.css';
@@ -18,7 +18,15 @@ const wagmiClient = createClient({
 const SignInButton = () => {
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
+    <RainbowKitProvider 
+          chains={chains}
+          theme={darkTheme({
+            accentColor: '#1b1b1b',
+            accentColorForeground: 'white',
+            borderRadius: 'large',
+            fontStack: 'system',
+            overlayBlur: 'small',
+          })}>
         <ConnectButton />
       </RainbowKitProvider>
     </WagmiConfig>

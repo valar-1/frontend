@@ -5,7 +5,7 @@ import PersonalInfo from "../../components/other/account/PersonalInfo";
 import WidgetBookingProduct from "../../components/sidebars/widgets/WidgetBookingProduct";
 import { GiChickenOven } from 'react-icons/gi'
 import WidgetBookingSummary from "../../components/sidebars/widgets/WidgetBookingSummary";
-import Footer from "../../components/common/footer/Footer";
+import Footer from "../../components/common/Footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import breadcrumbimg from '../../public/images/bread-bg.jpg'
 import placeimg from '../../public/images/img6.jpg'

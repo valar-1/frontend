@@ -16,7 +16,7 @@ export default function CategoriesFilterBar({ title, items, onCategorySelect }) 
             className={`category-item ${selectedCategory === 'all' ? 'active' : ''}`}
             onClick={() => handleCategoryClick('all')}
           >
-            All
+            📚 All
           </div>
           {items.map((item, index) => (
             <div

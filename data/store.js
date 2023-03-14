@@ -4,13 +4,15 @@ import {GiChickenOven, GiHouse, GiPineTree, GiPositionMarker, GiWineGlass} from 
 import {
     BsBookmark,
     BsBriefcase,
+    BsCalendarEvent,
     BsCheckCircle, BsEye,
     BsGear,
     BsHouseDoor,
     BsListCheck,
     BsMap,
     BsMusicNoteBeamed,
-    BsPencil
+    BsPencil,
+    BsPeople
 } from 'react-icons/bs';
 import {MdClose, MdFitnessCenter, MdStar, MdStarBorder, MdStarHalf} from 'react-icons/md';
 import img1 from "../public/images/img1.jpg"; // 263*175
@@ -203,6 +205,16 @@ const sectiondata = {
                     text: 'Retreats',
                     icon: <FaCampground />
                 },
+                {
+                    path: '',
+                    text: 'Communities',
+                    icon: <BsPeople />
+                },
+                {
+                    path: '',
+                    text: 'Events',
+                    icon: <BsCalendarEvent />
+                },
                 /*
                 {
                     path: '',
@@ -243,19 +255,26 @@ const sectiondata = {
                     path: "#",
                     displaytitle: "🏡  Stays",
                     name: "stays",
-                    icon: <RiBuilding4Line />
                 },
                 {
                     path: "#",
                     displaytitle: "🗄️  Co-Work",
                     name: "cowork",
-                    icon: <GiChickenOven />
                 },
                 {
                     path: "#",
                     displaytitle: "🏕️  Retreats",
                     name:"retreats",
-                    icon: <RiPlaneLine />
+                },
+                {
+                    path: "#",
+                    displaytitle: "👨‍👩‍👧‍👦  Networks",
+                    name: "networks",
+                },
+                {
+                    path: "#",
+                    displaytitle: "🎪  Events",
+                    name:"events",
                 },
                 /*
                 {
@@ -3214,9 +3233,9 @@ const sectiondata = {
         logo1,
         logo1,
     ],
-    footerdata: {
-        footerlogo: darklogo,
-        footerdesc: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros',
+    Footerdata: {
+        Footerlogo: darklogo,
+        Footerdesc: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros',
         sociallinks: [
             {
                 icon: <FaFacebookF />,
@@ -3239,7 +3258,7 @@ const sectiondata = {
                 url: 'https://behance.com'
             },
         ],
-        footerquicklinks: {
+        Footerquicklinks: {
             title: 'Quick Links',
             links: [
                 {
@@ -3268,7 +3287,7 @@ const sectiondata = {
                 }
             ]
         },
-        footercategories: {
+        Footercategories: {
             title: 'Categories',
             links: [
                 {
@@ -3297,7 +3316,7 @@ const sectiondata = {
                 }
             ]
         },
-        footercontact: {
+        Footercontact: {
             title: 'Contact With Us',
             lists: [
                 {

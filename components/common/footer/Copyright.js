@@ -12,7 +12,7 @@ function Copyright() {
                             &copy; Copyright Hyboria Inc. 2023
                         </p>
 
-                        <CopyrightMenu copyrightright={sectiondata.footerdata.copyright} />
+                        <CopyrightMenu copyrightright={sectiondata.Footerdata.copyright} />
                     </div>
                 </div>
             </div>

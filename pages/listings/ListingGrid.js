@@ -5,7 +5,7 @@ import PlaceGrid from "../../components/places/PlaceGrid";
 import Button from "../../components/common/Button";
 import {FiRefreshCw} from "react-icons/fi";
 import NewsLetter from "../../components/other/cta/NewsLetter";
-import Footer from "../../components/common/footer/Footer";
+import Footer from "../../components/common/Footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import GenericHeader from "../../components/common/GenericHeader";
 import breadcrumbimg from '../../public/images/bread-bg.jpg'

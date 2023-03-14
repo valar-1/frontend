@@ -1,18 +1,20 @@
 import React from 'react';
 
-function FooterQuickLinkWidget({footerquicklink}) {
+function FooterQuickLinkWidget({Footerquicklink}) {
     return (
         <>
             <div className="col-lg-3 column-td-6">
-                <div className="footer-item">
-                    <h4 className="footer__title">
-                        {footerquicklink.title}
+                <div className="Footer-item">
+                    <h4 className="Footer__title">
+                        {Footerquicklink.title}
                     </h4>
                     <ul className="list-items">
-                        {footerquicklink.links.map((link, index) => {
+                        {Footerquicklink.links.map((link, index) => {
                             return (
                                 <li key={index}>
-                                    <a href={link.path}>{link.text}</a>
+                                    <Link href={link.path}>
+                                    {link.text}
+                                    </Link>
                                 </li>
                             )
                         })}

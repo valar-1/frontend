@@ -1,15 +1,15 @@
 import React from 'react';
 
-function FooterContactWidget({footercontact}) {
+function FooterContactWidget({Footercontact}) {
     return (
         <>
             <div className="col-lg-3 column-td-6">
-                <div className="footer-item">
-                    <h4 className="footer__title">
-                        {footercontact.title}
+                <div className="Footer-item">
+                    <h4 className="Footer__title">
+                        {Footercontact.title}
                     </h4>
                     <ul className="info-list contact-links">
-                        {footercontact.lists.map((list, index) => {
+                        {Footercontact.lists.map((list, index) => {
                             return (
                                 <li key={index}>
                                     <span className="la">

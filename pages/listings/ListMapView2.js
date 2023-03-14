@@ -4,7 +4,7 @@ import Header from "../../components/common/Header";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
 import NewsLetter from "../../components/other/cta/NewsLetter";
-import Footer from "../../components/common/footer/Footer";
+import Footer from "../../components/common/Footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import PlaceGrid from "../../components/places/PlaceGrid";
 import MapViewCluster from "../../components/contact/MapViewCluster";

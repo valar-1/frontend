@@ -6,7 +6,7 @@ import PlaceListing from "../../components/places/PlaceListing";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
 import NewsLetter from "../../components/other/cta/NewsLetter";
-import Footer from "../../components/common/footer/Footer";
+import Footer from "../../components/common/Footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import GenericHeader from "../../components/common/GenericHeader";
 import breadcrumbimg from '../../public/images/bread-bg.jpg'

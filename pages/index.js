@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 
 import Header from '../components/common/Header';
 import AnnouncementBar from '../components/common/AnnouncementBar';
-import Footer from '../components/common/footer/Footer';
+import Footer from '../components/common/Footer/Footer';
 import ScrollTopBtn from '../components/common/ScrollTopBtn';
 import sectiondata from '../data/store';
 import CategoriesFilterBar from '../components/common/CategoriesFilterBar';
 import PlaceGrid from '../components/places/PlaceGrid';
+import { getPages } from '../lib/getPages';
 
-function Home({ search }) {
+function Home({ search, pages }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [filteredGridItems, setFilteredGridItems] = useState(sectiondata.placesgrid);
 
@@ -28,13 +29,6 @@ function Home({ search }) {
 
   return (
     <main className="home">
-
-      {/* Announcement Bar */}
-      <AnnouncementBar />
-
-      {/* Header / Nav */}
-      <Header />
-
       {/* Listings */}
       <section className="card-area text-center padding-bottom-100px">
         <div className="fluid-80pxPadding-container">
@@ -54,12 +48,18 @@ function Home({ search }) {
         </div>
       </section>
 
-      {/* Footer */}
-      <Footer />
 
-      <ScrollTopBtn />
     </main>
   );
+}
+
+export async function getServerSideProps() {
+  const pages = getPages();
+  return {
+    props: {
+      pages,
+    },
+  };
 }
 
 export default Home;

@@ -8,7 +8,6 @@ import { FaSearch, FaUsers, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa
 const SearchInput = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [selectedCount, setSelectedCount] = useState(1);
-  const [focusedInput, setFocusedInput] = useState(null);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
 
@@ -16,13 +15,16 @@ const SearchInput = () => {
     setSelectedLocation(selectedOption);
   };
 
-  const handleDateChange = ({ startDate, endDate }) => {
-    setStartDate(startDate);
-    setEndDate(endDate);
+  const handleCountChange = (value) => {
+    setSelectedCount(value);
   };
 
-  const handleFocusChange = (focusedInput) => {
-    setFocusedInput(focusedInput);
+  const handleStartDateChange = (value) => {
+    setStartDate(value);
+  };
+
+  const handleEndDateChange = (value) => {
+    setEndDate(value);
   };
 
   const handleSubmit = (e) => {
@@ -31,29 +33,34 @@ const SearchInput = () => {
   };
 
   return (
-    <form id="searchForm" onSubmit={handleSubmit}>
-      <div className="searchContainer">
-        <div className="searchInputContainer">
-          <PeopleInput selectedCount={selectedCount} setSelectedCount={setSelectedCount} icon={<FaUsers />} />
+    <div className="searchBanner">
+      <form id="searchForm" onSubmit={handleSubmit}>
+        <div className="searchContainer">
+          
+          <div className="searchInputContainer">
+            <LocationSelect selectedLocation={selectedLocation} handleLocationChange={handleLocationChange} icon={<FaMapMarkerAlt />} />
+          </div>
+
+          <div className="searchInputContainer">
+            <DateRangeInput
+              startDate={startDate}
+              endDate={endDate}
+              onStartDateChange={handleStartDateChange}
+              onEndDateChange={handleEndDateChange}
+              icon={<FaCalendarAlt />}
+            />
+          </div>
+
+          <div className="searchInputContainer">
+            <PeopleInput selectedCount={selectedCount} setSelectedCount={handleCountChange} icon={<FaUsers />} />
+          </div>
+
+          <button type="submit" className="searchInputBtn">
+            <FaSearch /> <span className="searchInputBtnText">Search</span>
+          </button>
         </div>
-        <div className="searchInputContainer">
-          <DateRangeInput
-            startDate={startDate}
-            endDate={endDate}
-            onDatesChange={handleDateChange}
-            focusedInput={focusedInput}
-            onFocusChange={handleFocusChange}
-            icon={<FaCalendarAlt />}
-          />
-        </div>
-        <div className="searchInputContainer">
-          <LocationSelect selectedLocation={selectedLocation} handleLocationChange={handleLocationChange} icon={<FaMapMarkerAlt />} />
-        </div>
-        <button type="submit" className="searchInputBtn">
-          <FaSearch />
-        </button>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
 

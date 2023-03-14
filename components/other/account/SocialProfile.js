@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function SocialProfile({socials}) {
     return (
@@ -6,7 +7,11 @@ function SocialProfile({socials}) {
             <ul className="social-profile padding-top-30px padding-bottom-30px">
                 {socials.map((item, i) => {
                     return (
-                        <li key={i}><a href={item.url}><i className="fa">{item.icon}</i></a></li>
+                        <li key={i}>
+                            <Link href={item.url}>
+                                <i className="fa">{item.icon}</i>
+                            </Link>
+                         </li>
                     )
                 })}
             </ul>

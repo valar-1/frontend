@@ -12,7 +12,7 @@ import ListingDetailsComments from "../../components/contact/ListingDetailsComme
 import ReviewFields from "../../components/contact/ReviewFields";
 import PlaceOne from "../../components/places/PlaceOne";
 import NewsLetter from "../../components/other/cta/NewsLetter";
-import Footer from "../../components/common/footer/Footer";
+import Footer from "../../components/common/Footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import sectiondata from "../../data/store";
 

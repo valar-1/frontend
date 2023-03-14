@@ -11,7 +11,7 @@ import HowItWork4 from "../components/hiw/HowItWork4";
 import TeamOne from "../components/team/TeamOne";
 import Button from "../components/common/Button";
 import NewsLetter from "../components/other/cta/NewsLetter";
-import Footer from "../components/common/footer/Footer";
+import Footer from "../components/common/Footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 import sectiondata from "../data/store";
 

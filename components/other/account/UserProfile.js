@@ -6,7 +6,7 @@ import PlaceGrid from "../../places/PlaceGrid";
 import Button from "../../common/Button";
 import { FiRefreshCw } from 'react-icons/fi'
 import NewsLetter from "../cta/NewsLetter";
-import Footer from "../../common/footer/Footer";
+import Footer from "../../common/Footer/Footer";
 import ScrollTopBtn from "../../common/ScrollTopBtn";
 import sectiondata from "../../../data/store";
 

@@ -7,7 +7,7 @@ import Link from 'next/link';
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
 import NewsLetter from "../../components/other/cta/NewsLetter";
-import Footer from "../../components/common/footer/Footer";
+import Footer from "../../components/common/Footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import Select from "react-select";
 import breadcrumbimg from '../../public/images/bread-bg.jpg'

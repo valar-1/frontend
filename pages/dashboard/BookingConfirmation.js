@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../../components/common/Header";
 import { FiCheckCircle } from 'react-icons/fi'
 import Button from "../../components/common/Button";
-import Footer from "../../components/common/footer/Footer";
+import Footer from "../../components/common/Footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
 function BookingConfirmation() {
