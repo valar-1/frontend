@@ -1,0 +1,37 @@
+import React from 'react';
+import { DateRangePicker } from 'react-next-dates';
+import 'react-next-dates/dist/style.css';
+import { formatLong } from 'date-fns/fp';
+import { enUS } from 'date-fns/locale';
+
+const DateRangeInput = ({ startDate, endDate, onDatesChange, focusedInput, onFocusChange, icon }) => {
+  const startDateId = "start_date_input";
+  const endDateId = "end_date_input";
+  
+  return (
+    <div className="searchInputContainer">
+      <div className="searchInputIcon">
+        {icon}
+      </div>
+      <div className="searchInputField">
+        <DateRangePicker
+          startDate={startDate}
+          startDateId={startDateId}
+          endDate={endDate}
+          endDateId={endDateId}
+          onDatesChange={onDatesChange}
+          focusedInput={focusedInput}
+          onFocusChange={onFocusChange}
+          numberOfMonths={2}
+          isOutsideRange={(day) => day.isBefore(new Date())}
+
+          // Add this prop to use formatLong
+          getDefaultDateFormat={() => enUS.localize?.formatLong({ skeleton: 'P' })}
+
+        />
+      </div>
+    </div>
+  );
+};
+
+export default DateRangeInput;

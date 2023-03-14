@@ -21,7 +21,7 @@
         ],
         "program": "${workspaceFolder}/node_modules/jest/bin/jest",
         "args": [
-            "${workspaceFolder}/src/components/common/__tests__/inputtests.js",
+            "${workspaceFolder}/components/common/__tests__/inputtests.js",
             "--colors",
             "-i"
         ],
