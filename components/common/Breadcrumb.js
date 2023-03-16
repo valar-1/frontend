@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-function Breadcrumb ({CurrentPgTitle, MenuPgTitle, img}) {
+function Breadcrumb ({CurrentPgTitle, MenuPgTitle, }) {
     return (
         <>
-            <section className="breadcrumb-area" style={{backgroundImage: 'url('+img+')'}}>
+            <section className="breadcrumb-area" style={{}}>
                 <div className="breadcrumb-wrap">
                     <div className="container">
                         <div className="row">
@@ -28,12 +28,7 @@ function Breadcrumb ({CurrentPgTitle, MenuPgTitle, img}) {
                         </div>
                     </div>
                 </div>
-                <div className="bread-svg">
-                    <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-                        <path d="M-4.22,89.30 C280.19,26.14 324.21,125.81 511.00,41.94 L500.00,150.00 L0.00,150.00 Z" />
-                    </svg>
-                </div>
-            </section>
+                          </section>
         </>
     );
 }

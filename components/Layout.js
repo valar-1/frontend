@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from './common/Header';
-import Footer from './common/Footer/Footer';
+import Footer from './common/Footer';
+import Navigation from './common/Navigation';
 
 const Layout = ({ children }) => {
   const [pages, setPages] = useState([]);
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Navigation />
       <Header pages={pages} />
       {children}
       <Footer />

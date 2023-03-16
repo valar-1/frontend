@@ -7,7 +7,7 @@ import GeneralMap from "../components/contact/GeneralMap";
 import { FiPhone } from 'react-icons/fi'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { GoLocation } from 'react-icons/go'
-import Footer from "../components/common/Footer/Footer";
+import Footer from "../components/common/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 import breadcrumbimg from '../public/images/bread-bg.jpg'
 import sectiondata from "../data/store";
@@ -18,11 +18,9 @@ const state = {
 function Contact() {
     return (
         <main className="contact-page">
-            {/* Header */}
-            <Header />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Contact Us" MenuPgTitle="pages" img={state.breadcrumbimg} />
+            <Breadcrumb CurrentPgTitle="Contact Us"/>
 
             <section className="contact-area padding-top-40px padding-bottom-80px">
                 <div className="container">
@@ -64,11 +62,6 @@ function Contact() {
                     </ul>
                 </div>
             </div>
-
-            {/* Footer */}
-            <Footer />
-
-            <ScrollTopBtn />
 
         </main>
     );

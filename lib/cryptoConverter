@@ -9,9 +9,7 @@ const converter = new CryptoConvert({
   binance: false,
   bitfinex: false,
   coinbase: false,
-  timeout: 5000,
   kraken: true,
-  disableExchangeMode: 'saveLastCache',
 });
 
 export async function ready() {

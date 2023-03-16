@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function CategoriesFilterBar({ title, items, onCategorySelect }) {
+export default function CategoriesBar({ title, items, onCategorySelect }) {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const handleCategoryClick = (category) => {

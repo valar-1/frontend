@@ -172,10 +172,10 @@ ul {
 
 .search-bar-wrapper {
     width: 100%;
+    height: 30vh;
     display: flex;
     background: linear-gradient(0deg, rgba(129, 26, 255, 0.56), rgba(129, 26, 255, 0.56)), linear-gradient(120.17deg, rgba(143, 146, 227, 0.87) 29.58%, rgba(140, 143, 204, 0) 91.06%), #C6C6C6;
     box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
@@ -2444,7 +2444,7 @@ text-overflow: ellipsis;
     position: relative;
     z-index: 1;
     color: #fff;
-    background-image: url("../public/images/bread-bg.jpg");
+    background-color: #1B1B1B;
     background-size: cover;
     background-position: center;
     overflow: hidden; }
@@ -2452,25 +2452,6 @@ text-overflow: ellipsis;
       .breadcrumb-area {
         padding-top: 180px;
         padding-bottom: 190px; } }
-    .breadcrumb-area:before {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(51, 63, 87, 0.8);
-      z-index: -1; }
-    .breadcrumb-area .bread-svg {
-      position: absolute;
-      bottom: -20px;
-      left: 0;
-      width: 100%; }
-      .breadcrumb-area .bread-svg svg {
-        width: 100%;
-        height: 180px;
-        stroke: none;
-        fill: #fff; }
   
   .breadcrumb-content {
     text-align: center; }
@@ -5206,7 +5187,7 @@ text-overflow: ellipsis;
   
 
   /*====================================================
-      categoriesFilterBar
+      CategoriesBar
    ====================================================*/
 
 
@@ -8288,197 +8269,75 @@ text-overflow: ellipsis;
   /*====================================================
       Footer-area
    ====================================================*/
-  .Footer-area {
-    position: relative;
-    z-index: 1; }
-    .Footer-area:before {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-     }
-  
-  .Footer-item {
-    color: #808996;
-    position: relative;
-    height: 100%; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .Footer-item {
-        margin-bottom: 50px; } }
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-      .Footer-item {
-        margin-bottom: 40px; } }
-    @media only screen and (min-width: 320px) and (max-width: 479px) {
-      .Footer-item {
-        margin-bottom: 40px; } }
-    .Footer-item .logo {
-      padding: 0;
-      position: inherit;
-      text-align: inherit;
-      top: auto;
-      left: auto;
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
-      transform: translateX(0); }
-      .Footer-item .logo .Footer__desc {
-        margin-top: 25px;
-        line-height: 27px; }
-  
-  .Footer-item .logo .social-profile li {
-    margin-right: 3px;
+   .Footer-area {
+    z-index: 1000;
+    background-color: #ffffff;
+    padding: 7px 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid grey;
   }
-  .Footer-item .logo .social-profile li:last-child {
-    margin-right: 0;
-  }
-        @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .Footer-item .logo .social-profile {
-            margin-top: 10px; } }
-    .Footer-item .Footer__desc {
-      font-size: 15px;
-      font-weight: 500; }
-      .Footer-item .Footer__desc a {
-        color: #333f57;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s; }
-        .Footer-item .Footer__desc a:hover {
-          color: #ff6b6b; }
-    .Footer-item .Footer__title {
-      margin-bottom: 25px;
-      font-size: 18px;
-      font-weight: 600;
-      color: #333f57;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 15px; }
-      .Footer-item .Footer__title:before, .Footer-item .Footer__title:after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        left: 0;
-        width: 25px;
-        height: 3px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
-        background-color: #ff6b6b; }
-      .Footer-item .Footer__title:after {
-        left: 28px;
-        width: 12px; }
-    .Footer-item .contact-links {
-      margin-top: 5px; }
-      .Footer-item .contact-links li {
-        margin-bottom: 15px;
-        position: relative;
-        text-transform: inherit; }
   
-  .copy-right {
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-text {
     color: #808996;
     font-weight: 500;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flex;
+    font-size: 14px;
+  }
+  
+  .footer-links {
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
     align-items: center;
-    font-size: 14px; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .copy-right {
-        margin-top: 30px;
-        padding-top: 30px;
-        display: block;
-        text-align: center; } }
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-      .copy-right {
-        margin-top: 30px;
-        padding-top: 30px;
-        display: block;
-        text-align: center; } }
-    @media only screen and (min-width: 320px) and (max-width: 479px) {
-      .copy-right {
-        margin-top: 30px;
-        padding-top: 30px;
-        display: block;
-        text-align: center; } }
-    .copy-right:after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #333f57;
-      opacity: 0.1; }
-    .copy-right span {
-      animation: heartBeat 1000ms infinite linear;
-      font-size: 20px; }
-    .copy-right span,
-    .copy-right a {
-      color: #ff6b6b; }
-    .copy-right .copy__desc {
-      font-family: "Work Sans", sans-serif; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .copy-right .list-items {
-        text-align: center;
-        margin-top: 5px; } }
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-      .copy-right .list-items {
-        text-align: center;
-        margin-top: 5px; } }
-    @media only screen and (min-width: 320px) and (max-width: 479px) {
-      .copy-right .list-items {
-        text-align: center;
-        margin-top: 5px; } }
-    .copy-right .list-items li {
-      border-right: 1px solid #ddd;
-      padding-right: 10px;
-      padding-left: 10px;
-      line-height: 20px;
-      display: inline-block; }
-      .copy-right .list-items li:last-child {
-        border-right: none;
-        padding-right: 0;
-        margin-bottom: 0; }
-        .copyright-right-side {
-          flex: auto;
-        }
-        .copyright-right-side select {
-        width: auto;
-        margin-left: 10px;
-        padding: 0 30px 0 18px;
-        height: 40px;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        }
-        .copyright-right-side .select-field {
-            position: relative;
-        }
-        .copyright-right-side .select-field::before {
-          content: '';
-          width: 8px;
-          height: 8px;
-          transform: rotate(
-                  45deg
-          );
-          border-right: 2px solid #808996;
-          border-bottom: 2px solid #808996;
-          right: 16px;
-          top: 15px;
-          position: absolute;
-        }
-        @media (max-width: 768px) {
-        .copyright-right-side {
-        flex-direction: column;
-        justify-content: center;
-        }
-        }
+    gap: 15px;
+  }
+  
+  .footer-links li a {
+    color: #808996;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links li a:hover {
+    color: #ff6b6b;
+  }
+  
+  .select-fields {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .select-field {
+    position: relative;
+  }
+  
+  .select-field select {
+    width: auto;
+    padding: 0 30px 0 18px;
+    height: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: 1px solid #808996;
+  }
+  
+  .select-field::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    border-right: 2px solid #808996;
+    border-bottom: 2px solid #808996;
+    right: 16px;
+    top: 15px;
+    position: absolute;
+  }
   

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import SearchInput from './SearchInput';
 import SignInButton from '../other/account/SignInButton';
 import Logo from './Logo';
 import logosrc from '../../public/images/logo.png';
 import Link from 'next/link';
+import SearchHero from './SearchHero'
 
 
 function getPages() {
@@ -72,7 +72,7 @@ export default function Header({ pages }) {
             <Logo url={logosrc} />
           </div>
           <div>
-                  {/* Menu */}
+            {/* Menu */}
             <HeaderMenu pages={pages} />
           </div>
           {/* Connect Wallet */}
@@ -80,16 +80,9 @@ export default function Header({ pages }) {
             <SignInButton />
           </div>
         </div>
-        {/* Search Bar */}
-        <div className="search-bar-wrapper">
-          <div className="searchBannerHeroText">
-            <h2 style={{ color: '#fff', padding: '30px', maxWidth: '400px', fontWeight: '300', alignItems: 'left', lineHeight: '34px' }}>
-              Travel using crypto, earn BTC and ETH by listing your space, and connect with your network like never before.
-            </h2>
-          </div>
-          <SearchInput startDate={startDate} endDate={endDate} />
-        </div>
       </div>
+      {/* Search Bar */}
+      <SearchHero startDate={startDate} endDate={endDate} /> 
     </header>
   );
 }

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 import Header from '../components/common/Header';
 import AnnouncementBar from '../components/common/AnnouncementBar';
-import Footer from '../components/common/Footer/Footer';
+import Footer from '../components/common/Footer';
 import ScrollTopBtn from '../components/common/ScrollTopBtn';
 import sectiondata from '../data/store';
-import CategoriesFilterBar from '../components/common/CategoriesFilterBar';
+import CategoriesBar from '../components/common/CategoriesBar';
 import PlaceGrid from '../components/places/PlaceGrid';
 import { getPages } from '../lib/getPages';
 
@@ -34,7 +34,7 @@ function Home({ search, pages }) {
         <div className="fluid-80pxPadding-container">
 
           {/* Category Filter */}
-          <CategoriesFilterBar
+          <CategoriesBar
             title={sectiondata.categories.featuredcategories.title}
             items={sectiondata.categories.featuredcategories.items.map((category) => ({
               text: category.displaytitle,

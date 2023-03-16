@@ -1,22 +1,14 @@
 import React from 'react';
-import Header from "../components/common/Header";
-
 import FaqCategories from "../components/other/categories/FaqCategories";
 import AccordionList from "../components/other/AccordionList";
 import SectionsHeading from "../components/common/SectionsHeading";
 import AskQuestionField from "../components/contact/AskQuestionField";
 import IconBoxTwo from "../components/other/iconboxes/IconBoxTwo";
-import NewsLetter from "../components/other/cta/NewsLetter";
-import Footer from "../components/common/Footer/Footer";
-import ScrollTopBtn from "../components/common/ScrollTopBtn";
 import sectiondata from "../data/store";
 
 function Faq() {
     return (
         <main className="faq-page">
-            {/* Header */}
-            <Header />
-
 
             {/* Category */}
             <section className="hiw-area section-bg padding-top-80px padding-bottom-50px after-none text-center">
@@ -49,13 +41,7 @@ function Faq() {
                 </div>
             </section>
 
-            {/* Newsletter */}
-            <NewsLetter newsLetterContent={sectiondata.calltoactions.newsletters} />
 
-            {/* Footer */}
-            <Footer />
-
-            <ScrollTopBtn />
 
         </main>
     );
