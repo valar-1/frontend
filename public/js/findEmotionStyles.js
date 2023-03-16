@@ -6,8 +6,7 @@ const findStyleForHash = hash => [...document.querySelectorAll('[data-emotion]')
 function MyComponent() {
   useEffect(() => {
     const styles = findStyleForHash('4klygg'); /*Insert the specific hash */
-    console.log(styles);
-  }, []);
+     }, []);
 
   return <div>Hello, world!</div>;
 }

@@ -7,5 +7,10 @@ module.exports = {
       config.resolve.fallback = { fs: false };
       return config;
     },
+/*     env: {
+      NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+      ETHEREUM_RPC_URL: process.env.ETHEREUM_RPC_URL,
+      NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+    }, */
   };
   
