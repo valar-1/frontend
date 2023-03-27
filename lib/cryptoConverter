@@ -1,0 +1,18 @@
+// /lib/cryptoConverter.js
+
+import CryptoConvert from 'crypto-convert';
+
+const converter = new CryptoConvert({
+  cryptoInterval: 10000,
+  fiatInterval: 60 * 1e3 * 60,
+  calculateAverage: true,
+  binance: false,
+  bitfinex: false,
+  coinbase: false,
+  kraken: true,
+});
+
+export async function ready() {
+  await converter.ready();
+  return converter;
+}

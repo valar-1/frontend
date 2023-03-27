@@ -1,0 +1,19 @@
+.announcement-bar {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.announcement-bar p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.announcement-bar-bg {
+  background-image: linear-gradient(to right top, #89b7fd, #82a4df, #7991c2, #6f7fa5, #646e8a);
+}
